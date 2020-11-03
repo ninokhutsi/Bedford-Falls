@@ -4,8 +4,23 @@ body{
     background-color: #2C2C2C;
     color:#F6F5FA;
 }
+.header{
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10%;
+    z-index: 9999;
+    background-color: #2C2C2C;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
 /* burger */
 .burger{
+    
     cursor: pointer;
     position: relative;
     width: 50px;
@@ -59,6 +74,7 @@ cursor: pointer;
   
 /* header */
 .logo-wrapper{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,6 +117,9 @@ cursor: pointer;
 a:hover{
     color:  #f2e209de;
 }
+a:focus{
+    color: #f2e209de;
+}
 /* icons */
 .soc-icons{
     display: flex;
@@ -120,6 +139,109 @@ a:hover{
 .slider img{
     width: 100%;
 }
+
+/* parallax */
+body, html{
+    height: 100%;
+}
+.parallax{
+    background-image: url(../img/image1.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}     
+
+
+/* about */
+.about-section{
+    width: 100%;
+}
+.about-img img{
+    position: relative;
+    width: 100%;
+    filter: brightness(100%);
+}
+.about-text{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    color: #f6f5fac4;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color:rgba(240, 240, 240, 0.05);
+    padding: 20px;
+   
+}
+.about-text h1{
+   line-height: 4;
+    color: #f2e209de;
+    letter-spacing: 4px;
+    font-size: 22px;
+}
+
+/* gallery */
+.gallery{
+    width: 100%;
+    padding: 20px;
+}
+.gallery .image-wrapper{
+    
+    display: flex;
+    flex-direction: column;
+}
+.gallery .image-wrapper a img{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+
+/* ************* */
+main-section{
+    padding-top: 5%;
+}
+/* ************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width:768px){
     .burger{
@@ -151,6 +273,11 @@ a:hover{
 }
 
 @media (min-width:1024px){
+    body{
+        background-image: url(../img/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .navbar{
         width: 100%;
         display: flex;
