@@ -18,7 +18,17 @@ $(document).ready(function(){
 
     });
 
-   })
+   var x = document.createElement("audio");
+
+   if(x.canPlayType("audio/.mp3")){
+       x.setAttribute("src", "./audio/Bedford Falls - Thrill is Gone.mp3");
+   }else{
+       x.setAttribute("src","./audio/Bedford Falls - Thrill is Gone.mp3");
+   }
+   x.setAttribute("controls", "controls");
+   document.body.appendChild(x);
+
+})
     
    
 
